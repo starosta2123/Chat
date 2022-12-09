@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // Write a message to the database
         val database = Firebase.database
-        val myRef = database.getReference("message")
+        val myRef = database.getReference("message").child("Dmitriy")
 
         myRef.setValue("Hello, World!")
     }
